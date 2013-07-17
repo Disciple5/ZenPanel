@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Control Panel
+Name[de]=Kontrollzentrum
+Name[fr]=Panneau de contrôle
+Comment=Zenwalk System Control Panel
+Comment[de]=Zenwalk System-Kontrollzentrum
+Comment[fr]=Panneau de contrôle Zenwalk
+Exec=zenpanel
+Icon=zenpanel
+Terminal=false
+Type=Application
+Categories=Application;System;Settings
+StartupNotify=true
+Encoding=UTF-8

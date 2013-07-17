@@ -1,0 +1,186 @@
+
+sam. sept. 19 18:41:43 CEST 2009
+- fixed segfault with bogus symlink to desktop file (thanks Til)
+
+Mon Aug 24 22:05:26 CEST 2009
+- fixed segfault
+
+Thu Dec 25 19:43:01 CET 2008
+- Localization of icon names
+
+Mon Nov 10 16:10:47 CET 2008
+- Added category detection
+- Added custom banner, title, icon option
+- Added localization support
+
+
+Fri Dec 29 14:53:00 CET 2006
+- Added command line arguments support for exec()
+- Code cleanup
+committer Jean-Philippe Guillemin <jp.guillemin@free.fr>
+
+
+Mon Dec 18 09:45:34 CET 2006
+- Added GTK icon theme support
+committer Jean-Philippe Guillemin <jp.guillemin@free.fr>
+
+
+Tue Dec 12 21:53:43 CET 2006
+- Simple Makefile
+- Simple Gtkdialog widget instead of menu 
+- Banner support
+- PATHS and DEBUG mode are DEFINED from Makefile
+- Geometry CLI options
+- Themed window title icon
+- Simplified code
+- Paths changes
+- Commented out the scrolled box, useless since geometry can be specified.
+committer Jean-Philippe Guillemin <jp.guillemin@free.fr>
+
+
+
+commit e2b297407135b0ccf16bed9d485dbdf5ebdcf157
+tree e30561bb0dfde814490c5e143d254ff40bb336c3
+parent 0f018ed65e38eaeff59bfb977cbccaca1252909c
+author Vincent Kergonna <vincent@phoebe.friends.paris> Fri, 03 Feb 2006 02:15:23 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Fri, 03 Feb 2006 02:15:23 +0100
+
+    Changes the default directory for zenpanels ".desktop" files.
+
+commit 0f018ed65e38eaeff59bfb977cbccaca1252909c
+tree 7431aeb3205de6a0a088424dabe7ea1dfd1aeec3
+parent 7ac3f084a9fb2e5de0677819b0002027d61e6615
+author Vincent Kergonna <vincent@phoebe.friends.paris> Wed, 01 Feb 2006 23:45:36 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Wed, 01 Feb 2006 23:45:36 +0100
+
+    Version 0.3
+
+commit 7ac3f084a9fb2e5de0677819b0002027d61e6615
+tree 8822170dd02e26b5e6e583722faa645e067f2452
+parent abbd95ea13ed1d6b7ba32bcfa59c3bd9cf2da868
+author Vincent Kergonna <vincent.k@orange.fr> Wed, 01 Feb 2006 22:42:59 +0100
+committer Vincent Kergonna <vincent@joey.friends.paris> Wed, 01 Feb 2006 22:42:59 +0100
+
+    Adds command line arguments parsing.
+
+commit abbd95ea13ed1d6b7ba32bcfa59c3bd9cf2da868
+tree e2490ba8b667f6c2707b612ce1cc49d1bbba1e5a
+parent 190848a5de64b2d0adbbee07f86f7e4c79ef2933
+author Vincent Kergonna <vincent.k@orange.fr> Wed, 01 Feb 2006 21:13:05 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Wed, 01 Feb 2006 21:13:05 +0100
+
+    Icons are now created correctly in the panel after reading from .desktop
+    files. Also almost every warning has been fixed.
+
+commit 190848a5de64b2d0adbbee07f86f7e4c79ef2933
+tree e33457148d52cb1015619aeedcbb6246b5a27d8d
+parent 52d4ac9bcc020c7ff407f4249ab5b1edb16c2d6a
+author Vincent Kergonna <vincent.k@orange.fr> Sun, 22 Jan 2006 23:36:00 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Sun, 22 Jan 2006 23:36:00 +0100
+
+    We need to read only the .desktop files and no other files!
+
+commit 52d4ac9bcc020c7ff407f4249ab5b1edb16c2d6a
+tree 33f8f55aac1536fd848166908450401723b04905
+parent f27b33c7801121210b7e9ab431e8d25615f06e00
+author Vincent Kergonna <vincent@joey.friends.paris> Sun, 22 Jan 2006 19:36:38 +0100
+committer Vincent Kergonna <vincent@joey.friends.paris> Sun, 22 Jan 2006 19:36:38 +0100
+
+    This evolution now makes zenpanel reads it's .desktop files from a given
+    directory instead of hardcoding everything.
+
+commit f27b33c7801121210b7e9ab431e8d25615f06e00
+tree 430b47b2ca3ba1974469620176b5d7a345b03bf1
+parent 512a5b37e543794ae18f89268ab087f5d9f842cd
+author Vincent Kergonna <vincent@joey.friends.paris> Sun, 22 Jan 2006 19:05:38 +0100
+committer Vincent Kergonna <vincent@joey.friends.paris> Sun, 22 Jan 2006 19:05:38 +0100
+
+    Adds files to allow parsing of .desktop files in zenpanel.
+
+commit 512a5b37e543794ae18f89268ab087f5d9f842cd
+tree c99d5b73bc86122737e0f02a1240533937261e0c
+parent e78ce62889f956d77ea98556f3df4e959354638b
+author Vincent Kergonna <vincent.k@orange.fr> Sat, 14 Jan 2006 00:47:09 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Sat, 14 Jan 2006 00:47:09 +0100
+
+    Removes the doc dir from the main makefile. The doc dir will be created by
+    the package build script so we don't need this anymore otherwise it will
+    duplicates files.
+
+commit e78ce62889f956d77ea98556f3df4e959354638b
+tree d232d2e1a9ac7a2ce2ef025174690184280059ae
+parent f73b543e4aa344bba08d6fac7aaa4861e0697b50
+author Vincent Kergonna <vincent.k@orange.fr> Fri, 13 Jan 2006 21:01:34 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Fri, 13 Jan 2006 21:01:34 +0100
+
+    Changed default window size. JP wants it this size so I've done it.
+
+commit f73b543e4aa344bba08d6fac7aaa4861e0697b50
+tree e5bf1d910dc655858dc2fe39b7ed2ff42a21b2b7
+parent e24cce65a2f2df87bc7667bfd949f9e36093c70d
+author Vincent Kergonna <vincent.k@orange.fr> Thu, 12 Jan 2006 23:50:11 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Thu, 12 Jan 2006 23:50:11 +0100
+
+    Adds signal handling to know when a child is dead and finish it properly by
+    calling wait4.
+
+commit e24cce65a2f2df87bc7667bfd949f9e36093c70d
+tree a62e29606e5ec0a59857e0a597baa3dde426083a
+parent 8e4665c62805094359cc94c864c45ec460744808
+author Vincent Kergonna <vincent.k@orange.fr> Thu, 12 Jan 2006 22:44:06 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Thu, 12 Jan 2006 22:44:06 +0100
+
+    Resized window to 640x480 by default.
+    Version 0.2
+
+commit 8e4665c62805094359cc94c864c45ec460744808
+tree 5e5cf5bb2051a8a1883d65debd8a4224bf644e62
+parent 5bd26a2bf42110e0ef8e49c2a7143ae711a7b14a
+author Vincent Kergonna <vincent.k@orange.fr> Mon, 19 Dec 2005 23:35:10 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Mon, 19 Dec 2005 23:35:10 +0100
+
+    Add acconfig.h
+
+commit 5bd26a2bf42110e0ef8e49c2a7143ae711a7b14a
+tree 6bde38ad5eb8cfe9f6d56af74629dc59e28a82e9
+parent 79bced6351cd2ca7823c93b4806cbfa76e73aa48
+author Vincent Kergonna <vincent.k@orange.fr> Mon, 19 Dec 2005 23:32:37 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Mon, 19 Dec 2005 23:32:37 +0100
+
+    Still adding some files.
+
+commit 79bced6351cd2ca7823c93b4806cbfa76e73aa48
+tree eb22f1ab6b4fabf42b4eb0de11e95abc07cbf128
+parent 59c464a8ea316f9e330c27fad86b704ef8a7cede
+author Vincent Kergonna <vincent.k@orange.fr> Mon, 19 Dec 2005 23:25:29 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Mon, 19 Dec 2005 23:25:29 +0100
+
+    Add some files in the makefile
+    Add build script
+    Add .desktop file
+
+commit 59c464a8ea316f9e330c27fad86b704ef8a7cede
+tree 35a7322455a6061cd7641da61431c19caa930bb1
+parent e41369864e78fb6ede1f9baf4fd3a9f8380a726e
+author Vincent Kergonna <vincent.k@orange.fr> Fri, 16 Dec 2005 23:59:55 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Fri, 16 Dec 2005 23:59:55 +0100
+
+    Add some files
+
+commit e41369864e78fb6ede1f9baf4fd3a9f8380a726e
+tree ad618f4ef5dc4663a75d01834fdf3dbea1b0a4f8
+parent dbb3600fd64ba720fa344dc0040f79fcb87ca871
+author Vincent Kergonna <vincent.k@orange.fr> Fri, 16 Dec 2005 23:56:57 +0100
+committer Vincent Kergonna <vincent@phoebe.friends.paris> Fri, 16 Dec 2005 23:56:57 +0100
+
+    * Added the about dialog.
+    * Added pkgtool to the applications
+    * Changed text associated with icons.
+
+commit dbb3600fd64ba720fa344dc0040f79fcb87ca871
+tree e0782a1e1ae1e56561cafbba8a046245083f4cc4
+author Vincent K <vincent@phoebe.(none)> Thu, 17 Nov 2005 22:17:52 +0100
+committer Vincent K <vincent@phoebe.(none)> Thu, 17 Nov 2005 22:17:52 +0100
+
+    Initial commit
+
